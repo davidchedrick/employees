@@ -1,13 +1,13 @@
-import { PRODUCTS } from "./features/fruitData";
+import { PRODUCTS } from "./features/food/fruitData";
+import ProductsArea from "./features/food/ProductsArea";
 import "./App.css";
-import ProductsArea from "./features/ProductsArea";
 
 function App() {
-    return (
-        <div className="App">
-            <ProductsArea products={PRODUCTS} />
-        </div>
-    );
+	return (
+		<div className="App">
+			<ProductsArea products={PRODUCTS} />
+		</div>
+	);
 }
 
 export default App;
