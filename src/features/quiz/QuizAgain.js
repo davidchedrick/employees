@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-function Quiz() {
+function QuizAgain() {
     const [questions, setQuestions] = useState({});
     const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
     const [selectedAnswers, setSelectedAnswers] = useState([]);
@@ -54,7 +54,9 @@ function Quiz() {
 
     return (
         <>
+            <h1>cactcatctatcatcactatcatca!!!!8888877!!</h1>
             <h1>{currentQuestion.question}</h1>
+
             {currentQuestion.answers.map((answer, answerIndex) => {
                 let className = "answer";
                 const selectedAnswer = selectedAnswers[currentQuestionIndex];
@@ -105,4 +107,4 @@ function Quiz() {
     );
 }
 
-export default Quiz;
+export default QuizAgain;
