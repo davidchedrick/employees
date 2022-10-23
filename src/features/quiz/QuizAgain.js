@@ -54,37 +54,37 @@ function QuizAgain() {
 
     return (
         <>
-            <h1>cactcatctatcatcactatcatca!!!!8888877!!</h1>
+            <h1>cactcatctatcatcactatcatca!!!!8888877!!!</h1>
             <h1>{currentQuestion.question}</h1>
 
             {currentQuestion.answers.map((answer, answerIndex) => {
                 let className = "answer";
                 const selectedAnswer = selectedAnswers[currentQuestionIndex];
 
-                if (selectedAnswer === answerIndex) {
-                    className +=
-                        currentQuestion.correctAnswer === selectedAnswer
-                            ? " correct"
-                            : " incorrect";
-                }
+                // if (selectedAnswer === answerIndex) {
+                //     className +=
+                //         currentQuestion.correctAnswer === selectedAnswer
+                //             ? " correct"
+                //             : " incorrect";
+                // }
 
-                return (
-                    <>
-                        <h2
-                            key={answerIndex}
-                            className={className}
-                            onClick={() => {
-                                if (!selectedAnswer)
-                                    setSelectedAnswers([
-                                        ...selectedAnswer,
-                                        answerIndex,
-                                    ]);
-                            }}
-                        >
-                            {answer}
-                        </h2>
-                    </>
-                );
+                // return (
+                //     <>
+                //         <h2
+                //             key={answerIndex}
+                //             className={className}
+                //             onClick={() => {
+                //                 if (!selectedAnswer)
+                //                     setSelectedAnswers([
+                //                         ...selectedAnswer,
+                //                         answerIndex,
+                //                     ]);
+                //             }}
+                //         >
+                //             {answer}
+                //         </h2>
+                //     </>
+                // );
             })}
 
             <button
