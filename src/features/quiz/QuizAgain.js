@@ -29,7 +29,7 @@ const data = [
 
 function QuizAgain() {
     const [questions, setQuestions] = useState(null);
-    console.log("questions: ", questions);
+
     const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
     const [chosenAnswers, setChosenAnswers] = useState([]);
 

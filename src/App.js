@@ -1,5 +1,6 @@
 import "./App.css";
-import QuizAgain from "./features/quiz/QuizAgain";
+import FormArea from "./features/formbuild/FormArea";
+// import QuizAgain from "./features/quiz/QuizAgain";
 
 // import { useState } from "react";
 // import Employee from "./componets/Employee";
@@ -12,8 +13,9 @@ function App() {
     // const [employees, setEmployees] = useState(data);
     return (
         <div className="App">
-            "catttatatattat"
-            <QuizAgain />
+            <FormArea />
+
+            {/* <QuizAgain /> */}
             {/* <ProfileArea />
             <ProductsArea products={PRODUCTS} />
 
